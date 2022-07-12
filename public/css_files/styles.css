@@ -13,8 +13,11 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    font-family: 'Poppins', sans-serif;
 }
-
+/*--------------------------------------*/
+/*This is all for controlling the navbar*/
+/*--------------------------------------*/
 li,a,button{
     font-family: 'Poppins', sans-serif;
     font-weight:500;
@@ -56,7 +59,7 @@ header{
 .nav__links li a:hover{
     color:#3882F6;
 }
-button{
+.sign_up1{
     padding:9px 25px;
     background-color:rgba(0,136,169,1);
     border:none;
@@ -66,23 +69,111 @@ button{
     margin-left:20px;
 }
 
-button:hover{
+sign_up1:hover{
     background-color:rgba(0,136,169,0.8);
 }
 
-
+/*--------------------------------------*/
+/*Controlling first main section*/
+/*--------------------------------------*/
 .hero{
     background-color: var(--mainColor);
-    height:300px;
+    height:50vh;
     padding-top:30px;
     display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:100px 10%;
 }
 
-.hero h1{
+.hero_info{
+    padding-right:100px;
+}
+
+.hero_info h1{
+    --hero-main-text:48px extra-bold #F9FAF8;
+    padding-top:-50px;
+    padding-bottom:10px;
+    font-size:48px;
+    font-weight:800;
+    color:#F9FAF8
+}
+.hero_info h2{
+    font-size:18px;
+    color:#E5E7EB;
+    padding-top:10px;
+}
+
+.hero_info button{
+    margin-left:0px;
+    background-color: #3882F6;
+    border:none;
+    border-radius:15px;
+    margin-top:20px;
+    padding:5px 35px;
+    cursor:pointer;
+
+}
+.hero img{
+    width:50%;
+}
+
+
+/*--------------------------------------*/
+/*Middle section*/
+/*--------------------------------------*/
+.randInfo{
+    height:50vh;
+    background-color: white;
+
+}
+.picWrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-end;
+    align-items:center;
+}
+.picWrap div{
+    align-items:center;
+
+}
+.placeImg{
+    width:200px;
+    height:200px;
+    border: 4px solid var(--button-color) ;
+    border-radius: 10px;
 }
 
 
 
 
+/*--------------------------------------*/
+/*Quote section*/
+/*--------------------------------------*/
+.quote_container{
+    height:30vh;
+    background-color:#E5E7EB;
+}
 
 
+
+
+/*--------------------------------------*/
+/*Signup container*/
+/*--------------------------------------*/
+.signup_container{
+    height:40vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.signup_container2{
+
+    width:80%;
+    height:50%;
+    margin:auto;
+    background-color:#3882F6;
+    color:white;
+}
