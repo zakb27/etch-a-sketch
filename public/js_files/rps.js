@@ -38,23 +38,37 @@ const playRound = (computer,user)=>{
         }
 }
 //Game function that runs a certain amount of games of rock paper scissors
-const game = () =>{
+const game = (user = 'rock') =>{
+    const container = document.querySelector('.outcome');
     let userScore=0;
     let computerScore=0;
-    for(let i=0;i<5;i++){
-        let computer = (getComputerChoice());
-        let user = getComputerChoice();
-        let score = (playRound(computer,user));
-        if (score.includes("You win!")){
-            userScore++;
-        }
-        if (score.includes("You lose!")){
-            computerScore++;
-        }
+
+    let computer = (getComputerChoice());
+
+    let score = (playRound(computer,user));
+    if (score.includes("You win!")){
+        userScore++;
     }
-    console.log("Did I win:",userScore>computerScore);
+    if (score.includes("You lose!")){
+        computerScore++;
+    }
+
+    if(userScore>computerScore) {
+        container.textContent ='Congratulations you have won';
+    }
+    else{
+        container.textContent ='Commiserations you have lost!' ;
+    }
 }
 
-game();
+const buttons = document.querySelectorAll('.choice');
+
+buttons.forEach((button) => {
+
+    // and for each one we add a 'click' listener
+    button.addEventListener('click', () => {
+        game(button.id)
+    });
+});
 
 
