@@ -1,9 +1,10 @@
+//Gets a random choice for rock paper scissors
 const getComputerChoice = ()=> {
     let x = ['rock', 'paper', 'scissors'];
     return x[Math.floor(Math.random() * x.length)];
 }
 
-
+//Function checks whether or not the user has won or not
 const playRound = (computer,user)=>{
     user = user.toLowerCase();
     if(computer===user){
@@ -36,7 +37,7 @@ const playRound = (computer,user)=>{
             }
         }
 }
-
+//Game function that runs a certain amount of games of rock paper scissors
 const game = () =>{
     let userScore=0;
     let computerScore=0;
@@ -55,4 +56,5 @@ const game = () =>{
 }
 
 game();
+
 
