@@ -9,18 +9,42 @@
 </head>
 <body>
 <header>
-    <h1>Welcome to Rock Paper Scissors</h1>
+    <h1>Force - Blaster - Lightsaber!</h1>
 </header>
 <main>
     <div class="game">
-        <div class="choices_container">
-            <button class="choice" id="rock">Rock!</button>
-            <button class="choice" id="paper">Paper!</button>
-            <button class="choice" id="scissors">Scissors!</button>
+        <div class="current_score_container">
+            <div class="score">
+                <p>User Score:</p>
+                <p id="display_user_score">0</p>
+            </div>
+            <div class="winner">
+                <p>Who will win:</p>
+            </div>
+            <div class="score">
+                <p>Computer Score: </p>
+                <p id="display_comp_score">0</p>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="choices_container">
+                <img src="../css_files/images/force.png"  class ='choice_img choice' id="rock">
+                <img src="../css_files/images/blaster.png"  class ='choice_img choice'id="paper">
+                <img src="../css_files/images/lightsaber.png" class ='choice_img choice' id="scissors">
+            </div>
+            <div class="current_container">
+                <div class="current_user_choice"></div>
+                <div class="outcome"></div>
+                <div class="current_comp_choice"></div>
+            </div>
+            <div class="choices_container">
+                <img src="../css_files/images/force.png"  class ='choice_img cp_img'>
+                <img src="../css_files/images/blaster.png"  class ='choice_img cp_img'>
+                <img src="../css_files/images/lightsaber.png" class ='choice_img cp_img'>
+            </div>
         </div>
 
-        <div class="outcome">
-        </div>
+        <button class="restart">Restart</button>
     </div>
 </main>
 </body>

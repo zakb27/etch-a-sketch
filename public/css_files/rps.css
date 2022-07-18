@@ -1,3 +1,184 @@
-button{
+:root{
+    --star-wars-color: rgb(255, 232, 31);
+    --back-color: #212529;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: var(--back-color);
+    color:white;
+}
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:15vh;
+
+}
+header h1{
+    text-align: center;
+    font-size:3rem;
+    margin-top:-20px;
+    font-family: "Arial Black", sans-serif;
+    color:var(--star-wars-color);
+}
+
+.game{
+    background-color: #343a40;
+    width:90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height:120vh;
+    padding:50px;
+    margin-bottom:50px;
+}
+
+/*Keeps track of score and displays over main part of game*/
+.current_score_container{
+    width:100%;
+    height:100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.score{
+    width:100px;
+    height:100px;
+    background-color: #3882F6;
+    text-align: center;
+    border-radius: 10px;
+    color:black;
+    background-color: rgb(255, 232, 31);
+}
+
+.winner{
+    color:var(--star-wars-color);
+    font-family: "Arial Black";
+    font-size: 2.5rem;
+}
+
+/*Main part of game*/
+.main_container{
+    padding-top:50px;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+.current_container{
+    width:500px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.current_user_choice,.current_comp_choice{
+    width:200px;
+    height:200px;
+    background-color: #6C757D;
+    border-radius: 10px;
+}
+
+.current_user_choice img{
+    background-color: rgba(101, 203, 218, 1);
+    transition:all 1s ease 0s;
+    padding:20px;
+    width:200px;
+    height:200px;
+    margin:0;
+    border-radius: 10px;
+
+}
+
+.current_comp_choice img{
+    background-color: rgba(240, 128, 128, 1);
+    padding:20px;
+    width:200px;
+    height:200px;
+    transition:all 0.2s ease 0s;
+}
+
+
+.outcome{
+    width:100px;
+    height:50px;
+    background-color: #3882F6;
+    margin:75px 0;
+    font-size: 12px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.choices_container{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:20px;
+}
+
+.choice_img{
     cursor:pointer;
+    background-color: rgba(101, 203, 218, 0.3);
+    padding:20px;
+    width:200px;
+    height:200px;
+    margin:0;
+    border-radius: 10px;
+    transition:all 0.2s ease 0s;
+}
+.choice_img:hover{
+    background-color: rgba(101, 203, 218, 1);
+    transition:all 1s ease 0s;
+}
+
+.cp_img{
+    background-color: rgba(240, 128, 128, 0.3);
+    transform: scaleX(-1);
+}
+
+.cp_img:hover{
+    background-color: rgba(240, 128, 128, 1);
+    padding:19px;
+}
+
+
+
+
+
+.restart{
+    padding:9px 25px;
+    background-color:var(--star-wars-color);
+    border:none;
+    border-radius:50px;
+    cursor:pointer;
+    transition:all 0.3s ease 0s;
+    color:black;
+    font-size: large;
+    font-family: "Arial Black";
+    margin:-50px auto;
+    display: block;
+    width:200px;
+    height:50px;
+}
+.restart:hover{
+    background-color:rgba(0,136,169,0.8);
+    transition:all 0.3s ease 0s;
+    width:210px;
+    height:53px;
 }
