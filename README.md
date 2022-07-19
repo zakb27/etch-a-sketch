@@ -1,5 +1,4 @@
-# Odin-Projects
+# Etch-a-sketch
 
-Collection of projects required for Odin
-Collection:
--Contains a landing page for cats
+
+A functional etch a sketch that uses javascript.
