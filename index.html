@@ -2,110 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Landing page</title>
-    <link rel="stylesheet" href="public/css_files/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Etch a sketch</title>
+    <link href="public/css_files/sketch.css" rel="stylesheet">
+    <script type="text/javascript" src="public/js_files/sketch.js" defer></script>
+
 </head>
 <body>
-<!--Header section with nav-->
-
-
-<!--Opening-->
 <header>
 
-    <h1 class="logo">Cat Page 🐱</h1>
-        <nav>
-        <ul class="nav__links">
-            <li>
-                <a href="#Opening">Opening</a>
-            </li>
-            <li>
-                <a href="#Middle">Middle</a>
-            </li>
-            <li>
-                <a href="#End">End</a>
-            </li>
-        </ul>
-    </nav>
-    <a href ='#' ><button class="sign_up1">Sign up</button></a>
+    <div class="options">
+
+
+    </div>
+
 </header>
-
-
-<main class="container">
-    <section id="opening">
-        <div class="hero">
-            <div class="hero_info">
-            <h1 class="main_title text">
-                Welcome to the cat cult
-            </h1>
-
-            <h2 class="secondary_info text">
-                This is a site that helps you worships cats and gives you further
-                information on what is possible
-            </h2>
-
-            <a href ='#' ><button class="sign_up2">Sign up</button></a>
-            </div>
-            <img src="public/css_files/images/cat_hero.jpeg" alt="Cat smiling" id="cat_img">
+<main>
+    <div class="etch">
+        <div class="container_left">
+            <div class="reset"><p>Reset</p></div>
+            <div class="black"><p>Black</p></div>
+            <div class="rgb"><p>RGB</p></div>
+            <div class="dial" id="dial1"></div>
         </div>
-    </section>
-
-
-    <section id="Middle">
-        <div class="randInfo">
-            <h3>
-               Some random information.
-            </h3>
-            <div class="picWrap">
-                <div>
-                <img src="public/css_files/images/cat1.jpeg" class="placeImg">
-                <p class="subtext">This is a cute cat number 1 where they have their feet in small loaf</p>
-                </div>
-                <div>
-                    <img src="public/css_files/images/cat2.jpeg" class="placeImg">
-                    <p class="subtext">This is cute cat number 2 where they are yawning</p>
-                </div>
-                <div>
-                    <img src="public/css_files/images/cat3.jpeg" class="placeImg">
-                    <p class="subtext">This is cute cat number 3 where they are on their back</p>
-                </div>
-                <div>
-                    <img src="public/css_files/images/cat4.jpeg" class="placeImg">
-                    <p class="subtext">This is cute cat number 4 where they are walking with purpose</p>
-                </div>
-
+        <div class="container_middle">
+            <h1>Etch a Sketch!</h1>
+            <div class="grid_container"></div>
+        </div>
+        <div class="container_right">
+            <div class="slider">
+                <input type="range" min="2" max="40" value="16" id="slider">
+                <p class="value">16x16</p>
+            </div>
+            <div class="slider">
+                <p class="check">Choose a color:</p>
+                <input type="color" value="#151b25" id="color_slider">
             </div>
 
+            <div class="dial" id="dial2"></div>
         </div>
-    </section>
-    <section id="Middle2">
-        <div class="quote_container">
-            <div class="quote_text">
-            <blockquote class="quote">
-                For some amount of time there has been a quote here and I thought to myself,
-                "Why not make an inspiring quote?"
-            </blockquote>
-            <p class="author">-Anonymous</p>
-            </div>
-        </div>
-    </section>
-    <section id="End">
-        <div class="signup_container">
-            <div class="signup_container2">
-                <div class="signup_container3">
-                    <h4>Call to action! It's time!</h4>
-                    <h5>Sign up for our product by clicking that button right over there</h5>
-                </div>
-                <button class="sign_up3">Sign up</button>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <footer>
-        <p>Page made by: Zak Brook 2022</p>
-    </footer>
 </main>
 </body>
 </html>
