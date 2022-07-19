@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: #1b2531;
+}
+
+.etch{
+    width:80vw;
+    height:100vh;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px auto;
+    border-radius:30px;
+}
+
+
+.container_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.reset,.black,.rgb{
+    width:100px;
+    height:50px;
+    background-color: #fae588;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #151b25;
+    font-family: "Arial Black",sans-serif;
+    font-size:1.1rem;
+    border-radius: 10px;
+    margin:10px 0;
+
+
+}
+
+.black{
+    background-color: #151b25;
+    color:white;
+}
+
+.rgb{
+    background-color: mediumpurple;
+    color: white;
+}
+
+.reset:hover,.rgb:hover,
+.black:hover{
+    background-color: white;
+    color: lightcoral;
+    transition:all 0.3s ease 0s;
+    cursor:pointer
+
+}
+
+
+.dial{
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.container_middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap:50px;
+}
+
+h1{
+    color:#fae588;
+    font-size:5rem;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-weight:700;
+
+}
+
+
+.grid_container{
+    box-sizing: content-box;
+    width:750px;
+    height:750px;
+    border:1px solid black;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+
+.grid_container:hover{
+    cursor:cell;
+}
+
+.grid_item{
+    background-color: #d2d2d2;
+    border:1px solid black;
+}
+
+
+.container_right{
+    display: flex;
+    flex-direction: column;
+    width:100px;
+    gap:30px;
+    text-align: center;
+}
+.color_picker{
+    width:100px;
+
+}
+#color_slider{
+    width:100%;
+    height:50px;
+    margin:0 auto;
+}
+#slider{
+    width:100px;
+}
+.check{
+    color:white;
+    font-family: "Arial Black",sans-serif;
+    font-size: 1.3rem;
+}
+
+.value{
+    color:white;
+    font-family: "Arial Black",sans-serif;
+    font-size: 1.3rem;
+}
+
+
